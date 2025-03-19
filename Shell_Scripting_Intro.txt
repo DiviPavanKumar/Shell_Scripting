@@ -57,6 +57,12 @@ Different Types Of Shell:
 
 For Amazon Linux(Which is based on CentOS/RHEL), Bash(/bin/bash) is the default shell.
 
-
 Ensure the script has execute permission:
 $ .
+
+Topics:
+-> Variables
+-> Arguments/Parameters
+-> Conditions
+-> Loops
+-> Functions
