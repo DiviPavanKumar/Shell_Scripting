@@ -58,11 +58,17 @@ Different Types Of Shell:
 For Amazon Linux(Which is based on CentOS/RHEL), Bash(/bin/bash) is the default shell.
 
 Ensure the script has execute permission:
-$ .
 
 Topics:
 -> Variables
+   : DRY - Dont Repeat yourSelf
+   : Create a variable and assign value to it.. 
+   : Wherever you are using instead of value, replace it with variable name
 -> Data Types
+   :Intiger - Numbers
+   :Float - Decimal values like 2.3
+   :Boolean - true 1 /false 0
+   :String - text
 -> Arguments/Parameters
 -> Conditions
 -> Loops
