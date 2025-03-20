@@ -13,7 +13,7 @@ B="20"
 
 NUMBER1
 NUMBER2
-SUM=$((NUMBER1+NUMBER2))
+SUM=$((NUMBER1 + NUMBER2))
 
 # Printing variables
 
