@@ -13,6 +13,7 @@ B="20"
 
 NUMBER1=$1
 NUMBER2=$2
+SUM=$(NUMBER1+NUMBER2)
 
 # Printing variables
 
@@ -25,5 +26,5 @@ echo "After Swap: A=$B, B=$A"
 
 echo "Enter First number: $1"
 echo "Enter 2nd number: $2"
-echo "Addition= $(NUMBER1+NUMBER2)"
+echo "Addition= $SUM"
 
