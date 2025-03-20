@@ -8,18 +8,21 @@ NAME="Pavan"
 AGE="32"
 CITY="Hyderabad"
 
-A="10"
-B="20"
-
 # Printing variables
 
 echo "My name is $NAME"
 echo "Im $AGE years old"
 echo "Im staying in $CITY"
+-----------------------------------------
+#1. Swap Two Variables
+
+A="10"
+B="20"
 
 echo "Before Swap: A=$A, B=$B"
 echo "After Swap: A=$B, B=$A"
-
+-------------------------------------------
+#2. Arithmetic Operations
 # Read user input first
 read -p "Enter First number: " NUM1
 read -p "Enter 2nd number: " NUM2
@@ -33,14 +36,22 @@ Mul=$((NUM1 * NUM2))
 echo "Addition: $sum"
 echo "Subtraction: $diff"
 echo "Multiplication: $Mul"
+---------------------------------------------
+#3. Check If a Number is Even or Odd
 
-# Read user input first
-
+# Read user input
 read -p "Enter the Value: " num
 
-if (( num % 2 == 0 )); then
-echo "$num is Even number"
-else
-echo "$num is ODD number"
-fi
+#Check If a Number is Even or Odd
 
+if (( num % 2 == 0 )); then
+    echo "$num is an Even number"
+else
+    echo "$num is an Odd number"
+fi
+----------------------------------------------
+#4. Reverse a String Using a Variable
+
+echo "Enter a string: " str
+reversed_str=$(echo "$str" | rev)
+echo "Reversed String: $reversed_str"
