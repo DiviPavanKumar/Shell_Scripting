@@ -62,6 +62,7 @@ $ .
 
 Topics:
 -> Variables
+-> Data Types
 -> Arguments/Parameters
 -> Conditions
 -> Loops
