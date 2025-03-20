@@ -67,7 +67,10 @@ echo "Total characters in this $str= $lenght"
 read -p "Enter a string: " str
 reversed_str=$(echo "$str" | rev)
 if [ "$str" = "$reversed_str" ]; then
-echo "$Str is Palindrom"
+echo "$str is Palindrom"
 else
 echo "$str is not Palindrom"
 fi
+
+#-----------------------------------------
+#8. Find the Largest of Three Numbers
