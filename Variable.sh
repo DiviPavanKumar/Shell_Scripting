@@ -13,7 +13,7 @@ CITY="Hyderabad"
 echo "My name is $NAME"
 echo "Im $AGE years old"
 echo "Im staying in $CITY"
------------------------------------------
+#-----------------------------------------
 #1. Swap Two Variables
 
 A="10"
@@ -21,7 +21,7 @@ B="20"
 
 echo "Before Swap: A=$A, B=$B"
 echo "After Swap: A=$B, B=$A"
--------------------------------------------
+#-------------------------------------------
 #2. Arithmetic Operations
 # Read user input first
 read -p "Enter First number: " NUM1
@@ -36,7 +36,7 @@ Mul=$((NUM1 * NUM2))
 echo "Addition: $sum"
 echo "Subtraction: $diff"
 echo "Multiplication: $Mul"
----------------------------------------------
+#---------------------------------------------
 #3. Check If a Number is Even or Odd
 
 # Read user input
@@ -49,7 +49,7 @@ if (( num % 2 == 0 )); then
 else
     echo "$num is an Odd number"
 fi
-----------------------------------------------
+#----------------------------------------------
 #4. Reverse a String Using a Variable
 
 echo "Enter a string: " str
