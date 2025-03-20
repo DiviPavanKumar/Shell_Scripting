@@ -55,3 +55,9 @@ fi
 read -p "Enter a string: " str
 reversed_str=$(echo "$str" | rev)
 echo "Reversed String: $reversed_str"
+#-----------------------------------------------
+#6. Count Characters in a String
+
+read -p "Enter a string: " str
+lenght=${#str}
+echo "Total characters in this $str= $lenght"
