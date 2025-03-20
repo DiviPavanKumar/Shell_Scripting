@@ -24,7 +24,7 @@ echo "Im staying in $CITY"
 echo "Before Swap: A=$A, B=$B"
 echo "After Swap: A=$B, B=$A"
 
-echo "Enter First number: $1"
-echo "Enter 2nd number: $2"
+read -p "Enter First number: " NUMBER1
+read -p "Enter 2nd number: " NUMBER2
 echo "Addition= $SUM"
 
