@@ -11,9 +11,9 @@ CITY="Hyderabad"
 A="10"
 B="20"
 
-NUMBER1=$1
-NUMBER2=$2
-SUM=$(NUMBER1+NUMBER2)
+NUMBER1
+NUMBER2
+SUM=$((NUMBER1+NUMBER2))
 
 # Printing variables
 
