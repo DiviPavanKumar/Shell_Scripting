@@ -66,7 +66,7 @@ echo "Total characters in this $str= $lenght"
 #7. Check If a String is a Palindrome
 read -p "Enter a string: " str
 reversed_str=$(echo "$str" | rev)
-if ("$str" = "$reversed_str"); then
+if [ "$str" = "$reversed_str" ]; then
 echo "$Str is Palindrom"
 else
 echo "$str is not Palindrom"
