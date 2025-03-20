@@ -17,6 +17,7 @@ echo "My name is $NAME"
 echo "Im $AGE years old"
 echo "Im staying in $CITY"
 
-echo "A=$B"
-echo "B=$A"
+echo "Before Swap: A=$A, B=$B"
+echo "After Swap: A$B, B=$A"
+
 
