@@ -52,6 +52,6 @@ fi
 #----------------------------------------------
 #4. Reverse a String Using a Variable
 
-echo "Enter a string: " str
+read -p "Enter a string: " str
 reversed_str=$(echo "$str" | rev)
 echo "Reversed String: $reversed_str"
