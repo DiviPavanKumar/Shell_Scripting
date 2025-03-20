@@ -11,7 +11,7 @@ CITY="Hyderabad"
 A="10"
 B="20"
 
-sum=$(( NUM1 + NUM2 ))
+sum="$(( NUM1 + NUM2 ))"
 
 # Printing variables
 
