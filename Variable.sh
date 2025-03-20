@@ -17,9 +17,7 @@ echo "Im staying in $CITY"
 #1. Swap Two Variables
 
 read -p "Enter A value: " A
-
-A="10"
-B="20"
+read -p "Enter B value: " B
 
 echo "Before Swap: A=$A, B=$B"
 echo "After Swap: A=$B, B=$A"
@@ -68,7 +66,7 @@ echo "Total characters in this $str= $lenght"
 #7. Check If a String is a Palindrome
 read -p "Enter a string: " str
 reversed_str=$(echo "$str" | rev)
-if ($str = $reversed_str); then
+if ("$str" = "$reversed_str"); then
 echo "$Str is Palindrom"
 else
 echo "$str is not Palindrom"
