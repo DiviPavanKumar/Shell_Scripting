@@ -74,3 +74,32 @@ fi
 
 #-----------------------------------------
 #8. Find the Largest of Three Numbers
+# Take three numbers as input
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+read -p "Enter third number: " num3
+
+# Compare the numbers to find the largest
+if [ "$num1" -ge "$num2" ] && [ "$num1" -ge "$num3" ]; then
+    echo "The largest number is: $num1"
+elif [ "$num2" -ge "$num1" ] && [ "$num2" -ge "$num3" ]; then
+    echo "The largest number is: $num2"
+else
+    echo "The largest number is: $num3"
+fi
+#-------------------------------------------
+#9.Calculate Factorial of a Number
+# Prompt the user to enter a number
+read -p "Enter a number: " num
+
+# Initialize the factorial result to 1
+factorial=1
+
+# Loop to calculate the factorial
+for (( i=1; i<=num; i++ ))
+do
+    factorial=$(( factorial * i ))
+done
+
+# Output the result
+echo "The factorial of $num is: $factorial"
