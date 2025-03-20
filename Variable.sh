@@ -34,3 +34,13 @@ echo "Addition: $sum"
 echo "Subtraction: $diff"
 echo "Multiplication: $Mul"
 
+# Read user input first
+
+read -p "Enter the Value: " num1
+
+If (( num1 % 2 == 0 )); then
+echo "$num1 is Even number"
+else
+"$num1 is ODD number"
+fi
+
