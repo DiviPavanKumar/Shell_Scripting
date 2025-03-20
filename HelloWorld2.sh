@@ -1,4 +1,4 @@
 #!/bin/bash
 
 echo "Hello World"
-each "Change has made"
+echo "Change has made"
