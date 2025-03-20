@@ -11,10 +11,6 @@ CITY="Hyderabad"
 A="10"
 B="20"
 
-sum=$((NUM1 + NUM2))
-diff=$((NUM1 - NUM2))
-Mul=$((NUM1 * NUM2))
-
 # Printing variables
 
 echo "My name is $NAME"
@@ -24,9 +20,16 @@ echo "Im staying in $CITY"
 echo "Before Swap: A=$A, B=$B"
 echo "After Swap: A=$B, B=$A"
 
+# Read user input first
 read -p "Enter First number: " NUM1
 read -p "Enter 2nd number: " NUM2
 
+# Perform calculations after getting input
+sum=$((NUM1 + NUM2))
+diff=$((NUM1 - NUM2))
+Mul=$((NUM1 * NUM2))
+
+# Display results
 echo "Addition: $sum"
 echo "Subtraction: $diff"
 echo "Multiplication: $Mul"
