@@ -38,7 +38,7 @@ echo "Multiplication: $Mul"
 
 read -p "Enter the Value: " num
 
-If (num % 2 == 0);
+if ((num % 2 == 0));
 echo "$num is Even number"
 else
 "$num is ODD number"
