@@ -36,11 +36,11 @@ echo "Multiplication: $Mul"
 
 # Read user input first
 
-read -p "Enter the Value: " num1
+read -p "Enter the Value: " num
 
-If ((num1 % 2 == 0));
-echo "$num1 is Even number"
+If (num % 2 == 0);
+echo "$num is Even number"
 else
-"$num1 is ODD number"
+"$num is ODD number"
 fi
 
