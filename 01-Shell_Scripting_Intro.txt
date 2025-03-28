@@ -1,0 +1,98 @@
+Linux Architecture:
+
+Kernel – The Brain of the System
+
+-> The Kernel is like the brain of a computer.
+-> It controls and manages the hardware (CPU, memory, storage, etc.).
+-> It acts as a middleman between the operating system and the hardware to ensure everything runs smoothly.
+
+How Do We Talk to the Kernel?
+
+-> We can’t talk to the Kernel directly. Instead, we use the Shell to send instructions.
+-> The Shell is like a translator that helps us communicate with the Kernel.
+
+How Does the User Get the Desired Output?
+
+-> User types a command in the Shell.
+-> Shell translates it into a language the Kernel understands.
+-> Kernel converts it into a language that hardware understands.
+-> Hardware processes the request and gives the result back to the user.
+
+What is Shell?
+
+-> The Shell is simply a place where we type Linux commands.
+-> It reads and processes the commands, then passes them to the Kernel.
+
+In short, User → Shell → Kernel → Hardware → Output is how Linux works!
+
+Shell Working Process:
+-> Whenever we execute a command in terminal(EC2 Instance - Putty or Mobixtem), shell will read the command and will check the syntax.
+-> If syntax/cmd is correct, then shell will convert that command into Kernal understandable format/Language
+-> Kernal will read the instructions given by shell, and then Kernal will convert the command into hardware components understandable format.
+
+What is Scripting?
+-> Scripting means writing a set of commands in a file to automate tasks.(A text file which executes a sequence of Linux Commands using a logic)
+-> Instead of typing each command manually one by one, you can save them in a file (called a script) and run it whenever needed.
+-> When you execute the script, the computer follows all the commands step by step automatically.
+💡 Example:
+Imagine you need to create a folder, move files, and delete old data every day. Instead of doing it manually, you can write a script that does all these tasks automatically with a single click!
+
+Why Shell Scripting?
+To automate repetitive DevOps Maintenance tasks. Insted of Manual, we can automate by using shell_Scripting.
+-> File Backup
+-> Delete Files/Folder/Data
+-> Manage user accounts
+
+First Line: #!/bin/bash
+Syntax: #!/bin/bash - (Bash Shell) - Tell the system to use Bash shell for the execution
+#! - shebang
+Its not mandatory to write, but it is recommended for clarity and consistency.
+
+Different Types Of Shell:
+-> Bash (Bourne Again Shell)
+-> sh(Bourne Shell)
+-> Zsh (Z Shell)
+-> Ksh (Korn Shell)
+-> Csh (C Shell)
+
+For Amazon Linux(Which is based on CentOS/RHEL), Bash(/bin/bash) is the default shell.
+
+Ensure the script has execute permission:
+
+Topics:
+-> Variables
+   : DRY - Dont Repeat yourSelf
+   : Create a variable and assign value to it.. 
+   : Wherever you are using instead of value, replace it with variable name
+-> Data Types
+   :Intiger - Numbers
+   :Float - Decimal values like 2.3
+   :Boolean - true 1 /false 0
+   :String - text
+-> Conditions
+-> Loops
+   : Loops in shell scripts allow repetitive execution of commands until a condition is met.
+     (If someone ask 10 packages to install, we can loop it then install one by one)
+   : Types of Loops:
+     for Loop – Iterates over a list of items.
+     while Loop – Runs as long as a condition is true.
+     until Loop – Runs until a condition becomes true.
+-> Functions
+   : You will keep some code inside functions which is more often repeated, and call whenever you require.
+   : Functions will do some work on behalf of us and it will update what happend.
+   : FUNCTION_NAME() {
+      here you write your statements, and call this function wherever required.
+   }
+
+*Check  Root user or not - $ id -u (If its showing 0 means logged-in with SUDO Access. Orelse its not rootbuser)
+
+What is the exit status in shell_Scripting?
+->By default, shell script can't understand the previous command whether success or failure.
+  Its our responsibility to check that is through the exit status. If its 0, We considered it as success else its failure
+  so we exit the shell scripts when it face some error.
+  (The exit status in shell scripting is a numeric value (0-255) returned by a command or script 
+  to indicate success (0) or failure (non-zero). It can be accessed using $?.)
+
+  Can create files with previous dates: $ touch -d "2025-03-10" filename.txt
+
+
